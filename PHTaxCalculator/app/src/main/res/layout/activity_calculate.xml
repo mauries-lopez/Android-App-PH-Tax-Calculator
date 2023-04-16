@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculateActivity">
+
+    <ImageView
+        android:id="@+id/calculateStatusBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangleone" />
+
+    <ImageView
+        android:id="@+id/calculateBackgroundBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateStatusBox"
+        app:srcCompat="@drawable/calculatebackgroundbox" />
+
+    <ImageView
+        android:id="@+id/middleBox"
+        android:layout_width="270dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introSub2"
+        app:srcCompat="@drawable/introcalculatebox" />
+
+    <ImageView
+        android:id="@+id/calculateBox"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/middleBox"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/middleBox"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyIncomeInput"
+        app:srcCompat="@drawable/calculatebutton" />
+
+    <TextView
+        android:id="@+id/titleMonthlyIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/monthly_income"
+        android:textColor="#107A63"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/middleBox"
+        app:layout_constraintStart_toStartOf="@+id/middleBox"
+        app:layout_constraintTop_toTopOf="@+id/middleBox" />
+
+    <EditText
+        android:id="@+id/monthlyIncomeInput"
+        android:layout_width="205dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="99dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="@string/enter_income"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textColorHint="#37000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMonthlyIncome" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="205dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/calculate"
+        android:textAllCaps="false"
+        android:textColor="#107A63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/middleBox"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/middleBox"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyIncomeInput" />
+
+    <TextView
+        android:id="@+id/introTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/philippines_ntax_calculator1"
+        android:textAlignment="center"
+        android:textColor="#107A63"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateStatusBox" />
+
+    <TextView
+        android:id="@+id/introSub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/data_based_on_table_version_2022"
+        android:textColor="#B2CCC3"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introTitle2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

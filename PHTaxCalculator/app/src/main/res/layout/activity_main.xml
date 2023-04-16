@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/statusbar"
+        android:layout_width="411dp"
+        android:layout_height="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangleone" />
+
+    <ImageView
+        android:id="@+id/backgroundbox"
+        android:layout_width="412dp"
+        android:layout_height="255dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusbar"
+        app:srcCompat="@drawable/backgroundbox" />
+
+    <TextView
+        android:id="@+id/tableVersionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Data based on Table Version (2022)"
+        android:textAlignment="center"
+        android:textColor="#B2CCC3"
+        android:textSize="7.5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyIncomeText" />
+
+    <ImageView
+        android:id="@+id/monthlyContriBox"
+        android:layout_width="188dp"
+        android:layout_height="267dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="204dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/statusbar"
+        app:srcCompat="@drawable/boxone" />
+
+    <TextView
+        android:id="@+id/monthlyContriText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Monthly \nContributions"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toTopOf="@+id/monthlyContriBox" />
+
+    <ImageView
+        android:id="@+id/mDotted1"
+        android:layout_width="181dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyContriBox"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toTopOf="@+id/monthlyContriBox"
+        app:srcCompat="@drawable/dottedline" />
+
+    <TextView
+        android:id="@+id/sssContriText"
+        android:layout_width="21dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif"
+        android:text="SSS"
+        android:textColor="#555555"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toTopOf="@+id/monthlyContriBox"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/sssValue"
+        android:layout_width="52dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textEnd"
+        android:textColor="#999999"
+        android:textIsSelectable="false"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyContriBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sssContriText"
+        app:layout_constraintTop_toTopOf="@+id/monthlyContriBox" />
+
+    <ImageView
+        android:id="@+id/mDotted2"
+        android:layout_width="181dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyContriBox"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toTopOf="@+id/monthlyContriBox"
+        app:srcCompat="@drawable/dottedline" />
+
+    <TextView
+        android:id="@+id/phContriText"
+        android:layout_width="50dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="PhilHealth"
+        android:textAllCaps="false"
+        android:textColor="#555555"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toBottomOf="@+id/sssContriText"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/phValue"
+        android:layout_width="52dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textEnd"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyContriBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/phContriText"
+        app:layout_constraintTop_toBottomOf="@+id/sssValue" />
+
+    <ImageView
+        android:id="@+id/mDotted3"
+        android:layout_width="181dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyContriBox"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toTopOf="@+id/monthlyContriBox"
+        app:srcCompat="@drawable/dottedline" />
+
+    <TextView
+        android:id="@+id/pagibigContriText"
+        android:layout_width="39dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="sans-serif"
+        android:text="Pag-ibig"
+        android:textAllCaps="false"
+        android:textColor="#555555"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toBottomOf="@+id/phContriText"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/pagibigValue"
+        android:layout_width="52dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textEnd"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyContriBox"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pagibigContriText"
+        app:layout_constraintTop_toBottomOf="@+id/phValue" />
+
+    <ImageView
+        android:id="@+id/mDotted4"
+        android:layout_width="181dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyContriBox"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toTopOf="@+id/monthlyContriBox"
+        app:srcCompat="@drawable/dottedline" />
+
+    <TextView
+        android:id="@+id/totalContriText"
+        android:layout_width="45dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif"
+        android:text="Total"
+        android:textAllCaps="false"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/monthlyContriBox"
+        app:layout_constraintTop_toBottomOf="@+id/pagibigContriText"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/totalContriValue"
+        android:layout_width="52dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textEnd"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyContriBox"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/totalContriText"
+        app:layout_constraintTop_toBottomOf="@+id/pagibigValue" />
+
+    <ImageView
+        android:id="@+id/taxComputationBox"
+        android:layout_width="188dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/statusbar"
+        app:srcCompat="@drawable/boxone" />
+
+    <TextView
+        android:id="@+id/taxComputationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tax \nComputations"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/taxComputationBox"
+        app:layout_constraintTop_toTopOf="@+id/taxComputationBox" />
+
+    <ImageView
+        android:id="@+id/tDotted1"
+        android:layout_width="181dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/taxComputationBox"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/taxComputationBox"
+        app:layout_constraintTop_toTopOf="@+id/taxComputationBox"
+        app:srcCompat="@drawable/dottedline" />
+
+    <TextView
+        android:id="@+id/incomeTaxText"
+        android:layout_width="55dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif"
+        android:text="Income Tax"
+        android:textAllCaps="false"
+        android:textColor="#555555"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/taxComputationBox"
+        app:layout_constraintTop_toTopOf="@+id/taxComputationBox"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/incomeTaxValue"
+        android:layout_width="91dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textEnd"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/taxComputationBox"
+        app:layout_constraintStart_toEndOf="@+id/incomeTaxText"
+        app:layout_constraintTop_toTopOf="@+id/taxComputationBox" />
+
+    <ImageView
+        android:id="@+id/tDotted2"
+        android:layout_width="181dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="@+id/taxComputationBox"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/taxComputationBox"
+        app:layout_constraintTop_toTopOf="@+id/taxComputationBox"
+        app:srcCompat="@drawable/dottedline" />
+
+    <TextView
+        android:id="@+id/netpayTaxText"
+        android:layout_width="81dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="sans-serif"
+        android:text="Net Pay After Tax"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#555555"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/taxComputationBox"
+        app:layout_constraintTop_toBottomOf="@+id/incomeTaxText"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/netpayTaxValue"
+        android:layout_width="52dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="textEnd"
+        android:textColor="#999999"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/taxComputationBox"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/netpayTaxText"
+        app:layout_constraintTop_toBottomOf="@+id/incomeTaxValue" />
+
+    <ImageView
+        android:id="@+id/totalBox"
+        android:layout_width="387dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyContriBox"
+        app:srcCompat="@drawable/boxtwo" />
+
+    <TextView
+        android:id="@+id/monthlyIncomeText"
+        android:layout_width="175dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="sans-serif"
+        android:text="Philippines \nTax Calculator"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#107A63"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/totalDeducText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Total Deductions"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#107A63"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/totalBox"
+        app:layout_constraintTop_toTopOf="@+id/totalBox" />
+
+    <TextView
+        android:id="@+id/totalDeducValue"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="viewStart"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/totalBox"
+        app:layout_constraintTop_toBottomOf="@+id/totalDeducText" />
+
+    <TextView
+        android:id="@+id/netPayAfterDeducText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Net Pay After Deductions"
+        android:textAllCaps="false"
+        android:textColor="#107A63"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/totalBox"
+        app:layout_constraintTop_toBottomOf="@+id/totalDeducValue" />
+
+    <TextView
+        android:id="@+id/netPayAfterDeducValue"
+        android:layout_width="342dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="viewStart"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/totalBox"
+        app:layout_constraintTop_toBottomOf="@+id/netPayAfterDeducText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

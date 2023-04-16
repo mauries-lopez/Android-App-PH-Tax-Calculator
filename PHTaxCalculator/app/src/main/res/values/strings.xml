@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PHTaxCalculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="monthly_contributions">Monthly Contributions</string>
+    <string name="tax_computation">Tax Computation</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="philippines_ntax_calculator">Philippines \nTax Calculator</string>
+    <string name="using_the_2021_philippine_tax_calculations">Using the (2021) Philippine Tax Calculations</string>
+    <string name="start">START</string>
+    <string name="background">background</string>
+    <string name="background1">background</string>
+    <string name="person">person</string>
+    <string name="philippines_tax_calculator">Philippines Tax Calculator</string>
+    <string name="sss">SSS -</string>
+    <string name="philhealth">PhilHealth -</string>
+    <string name="pag_ibig">Pag-Ibig -</string>
+    <string name="net_pay_after_tax">NET PAY AFTER TAX -</string>
+    <string name="income_tax">income tax -</string>
+    <string name="total_contributions">Total Contributions -</string>
+    <string name="todo">TODO</string>
+    <string name="monthly_income">Monthly Income</string>
+    <string name="enter_income">ENTER INCOME</string>
+    <string name="tax_exempted">0.0 - Tax Exempted</string>
+    <string name="philippines_ntax_calculator1">Philippines \nTax Calculator</string>
+    <string name="data_based_on_table_version_2022">Data based on Table Version (2022)</string>
+    <string name="philippines_ntax_calculator2">Philippines \nTax Calculator</string>
+    <string name="data_based_on_table_version_20221">Data based on Table Version (2022)</string>
+</resources>
